@@ -148,6 +148,8 @@ a, a:hover, a:visited, a:active {
         margin-top: 1rem;
     }
 
+    
+
     .education__time{
         display: flex;
         justify-content: space-around;
@@ -290,6 +292,10 @@ a, a:hover, a:visited, a:active {
      .info > div:hover{
         transform: scale(1.05);
         transition: transition 1s ease;
+    }
+
+    .p,.txt{
+        font-size: 1.5rem;
     }
   
 
