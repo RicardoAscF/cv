@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #0989A7;
+    --cyan: cyan;
+    --blue-radial: #0F4675;
+    --fondo: #E0E0E0;
+    --azul-facebook: #3B5998;
+    --azul-linkedin: #0E76A8;
+    --verde-whatsapp: #00BB2D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 320px){
+    .header-container{
+        /*background-image: radial-gradient(circle 500px at top left, royalblue, #3a1957);*/
+        background-image: linear-gradient(var(--blue-radial) , var(--cyan) );
+        color: white;
+        height: 70vh;  
+        
+        
+        width: 100%;
+    }
+
+    
+
+    .main-image{
+        background-image: url(../assets/img/yo.jpg);
+        background-size: contain;
+        border-radius: 50%;
+        display: block;
+        height: 8.5rem;
+        margin: 1rem auto;
+        width: 8.5rem;
+    }
+    
+    .datos{
+        font-size: 2rem; 
+        font-weight: bolder;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3rem;
+        text-align: center;
+        width: fit-content;
+      
+    }
+    
+    .datos p:first-of-type{
+        text-shadow: 5px 0px 2px #222;
+    }
+    
+    .datos p:last-child{
+        color: black;
+        font-size: 1.35rem; 
+        font-weight: bold;
+        letter-spacing: 0.4rem;
+        margin-top: 0.5rem;
+        text-transform: capitalize;
+    }
+    
+
+    .main{
+        background-color: var(--fondo);
+    }
+    
+    .main__h2{
+     
+        text-align: center;
+    }
+    
+    .main__h3{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    
+
+    /*Skiils*/
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        margin-top: 0.5rem;
+        margin-bottom: 2.5rem;
+        justify-items: center;
+        
+    }
+    
+    .skills__item{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100px;
+    }
+    
+    .skills__item .img{
+        width: 4.5rem;
+        height: 3rem;
+    }
+    
+    .skills__item p{
+        text-align: center;
+    }
+    
+
+
+    /*Education*/
+    .info{
+        text-align: center;
+    }
+
+    
+    [class^="info__"]{
+       border: 2px solid var(--color-principal);
+       margin-bottom: 1rem;
+    }
+
+   
+    .info__h2{
+        background-color: var(--color-principal);
+        color: white;
+    }
+
+    .info__workcamp h2 + p{
+        font-weight: bold;
+    }
+
+    .p{
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    .education__time{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info__contact ul{
+       font-size: 1.2rem;
+       list-style: none;
+       margin-right: 1rem;
+       padding: 0 1rem;
+       text-align: left;
+    }
+
+    .fa-facebook-f{
+        color: var(--azul-facebook);
+    }
+
+
+    .info__contact p{
+        color: black;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .info__contact p a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+    .fa-whatsapp{
+        color: var(--verde-whatsapp)
+    }
+
+    .fa-linkedin-in{
+        color: var(--azul-linkedin);
+       
+    }
+
+    li{
+        text-align: center;
+    }
+  
+    .footer{
+        align-items: center;
+        background-color: var(--color-principal);
+        color: white;
+        display: flex;
+        height: 10vh;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+       
+        margin-top: 1rem;
+        text-align: center;
+      
+    }
+    
+    .footer a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    /*En moviles no*/
+   
+
+}
+/*End MIN 320px*/
+
+
+
+
+
+/*I phone 5 landscape*/
+
+@media only screen and (width: 568px) and (height: 320px){
+    .header-container{
+        height: 100vh;
+     }
+
+     .footer{
+         justify-content: center;
+     }
+}
+
+
+
+
+
+
+/*Small devices (Portrait tablets and large phones)*/
+@media only screen and (min-width: 600px){
+    .burger{
+       display: none;
+    }
+
+    .header-container{
+       height: 100vh;
+    }
+
+    .header__barra-nav{
+        display: block;
+        /*
+        background-color: var(--color-principal);
+        color: white;
+        display: block;
+        border: 3px solid red;
+        position: fixed;
+        color: black;
+        top: 0;
+        width: 100%;
+        */
+    }
+
+    .header__barra-nav ul{
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 1.5rem;
+        margin: auto;
+        width: 75%;
+        
+    }
+    
+    .datos p:last-child{
+        font-size: 2rem;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 49vw);
+        justify-content: space-around;
+    }
+
+     .info > div:hover{
+        transform: scale(1.05);
+        transition: transition 1s ease;
+    }
+  
+
+    .footer{
+        align-items: center;
+        display: flex;
+        font-size: 1.5rem;
+        height: 15vh;
+        justify-content: center;
+    }
+      
+}
+/*End Small*/
+
+
+
+
+
+
+
+
+/*Tablets Portrait*/
+@media only screen and (min-width:768px){
+
+    .header-container{
+        height: 100vh;
+    }
+ 
+    .header__barra-nav ul{
+         font-size: 1rem;
+         padding-top: 1.5rem;
+     }
+     
+    .datos{
+        margin-top: 3rem;
+    }
+
+    .info{
+        grid-template-columns: repeat(2, 35vw);
+    }
+
+    .info p{
+        font-size: 0.8rem;
+    }
+
+    .footer{ 
+        font-size: 1rem;
+        height: 8vh;
+    }
+
+   
+ 
+     
+       
+}
+
+
+
+
+
+
+
+
+
+
+
+
