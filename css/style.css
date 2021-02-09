@@ -296,6 +296,7 @@ a, a:hover, a:visited, a:active {
 
     .p,.txt{
         font-size: 1.5rem;
+        border: 3px solid red;
     }
   
 
